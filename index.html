@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <meta property="og:title" content="Notifications page" />
+    <meta property="og:description" content="Developed by Thu" />
+    <meta property="og:image" content="./design/desktop-preview.jpg" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Notifications page</title>
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <!-- Noti header -->
+      <div class="noti_header">
+        <div class="noti_header_text">
+          <h1>Notifications</h1>
+          <p class="bold">3</p>
+        </div>
+
+        <button type="button" onclick="markAllRead()">Mark all as read</button>
+      </div>
+
+      <!-- Noti Main -->
+      <div class="noti_main" id="markAllRead">
+        <!-- New notis -->
+        <div class="noti_items noti_new--bg" id="noti_new" onclick="markRead()">
+          <img
+            class="img_avatar"
+            src="./assets/images/avatar-mark-webber.webp"
+            alt="mark webber"
+          />
+          <div class="noti_items_text">
+            <div class="noti_firstLine">
+              <a class="bold name" href="#">Mark Webber</a>
+              <span>&nbsp;reacted to your recent post&nbsp;</span>
+              <a class="bold activity" href="#">My first tournament today!</a>
+              <div class="dot"></div>
+            </div>
+            <p class="noti_time">1m ago</p>
+          </div>
+        </div>
+
+        <div class="noti_items noti_new--bg" id="noti_new" onclick="markRead()">
+          <img
+            class="img_avatar"
+            src="./assets/images/avatar-angela-gray.webp"
+            alt="angela gray"
+          />
+          <div class="noti_items_text">
+            <div class="noti_firstLine">
+              <a class="bold name" href="#">Angela Gray</a>
+              <span>&nbsp;followed you</span>
+              <div class="dot"></div>
+            </div>
+            <p class="noti_time">5m ago</p>
+          </div>
+        </div>
+
+        <div class="noti_items noti_new--bg" id="noti_new" onclick="markRead()">
+          <img
+            class="img_avatar"
+            src="./assets/images/avatar-jacob-thompson.webp"
+            alt="Jacob Thompson"
+          />
+          <div class="noti_items_text">
+            <div class="noti_firstLine">
+              <a class="bold name" href="#">Jacob Thompson</a>
+              <span>&nbsp;has joined your group&nbsp;</span>
+              <a class="bold activity" href="#">Chess Club</a>
+              <div class="dot"></div>
+            </div>
+            <p class="noti_time">1 day ago</p>
+          </div>
+        </div>
+
+        <!-- Old notis -->
+        <div class="noti_items noti_itemsMessage" id="noti_old">
+          <div class="noti_message">
+            <img
+              class="img_avatar"
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="Rizky Hasanuddin"
+            />
+            <div class="noti_items_text">
+              <div class="noti_firstLine">
+                <a class="bold name" href="#">Rizky Hasanuddin</a>
+                <span>&nbsp;sent you a private message</span>
+              </div>
+              <p class="noti_time">5 days ago</p>
+            </div>
+          </div>
+
+          <a class="noti_items--border" href="#"
+            >Hello, thanks for setting up the Chess Club. I’ve been a member for
+            a few weeks now and I’m already having lots of fun and improving my
+            game.</a
+          >
+        </div>
+
+        <div class="noti_items" id="noti_old">
+          <img
+            class="img_avatar"
+            src="./assets/images/avatar-kimberly-smith.webp"
+            alt="Kimberly Smith"
+          />
+          <div class="noti_itemsActivity">
+            <div class="noti_items_text">
+              <div class="noti_firstLine">
+                <a class="bold name" href="#">Kimberly Smith</a>
+                <span>&nbsp;commented on your picture&nbsp;</span>
+              </div>
+              <p class="noti_time">1 week ago</p>
+            </div>
+            <a href="#"
+              ><img
+                class="img_activity"
+                src="./assets/images/image-chess.webp"
+                alt="playing chess"
+            /></a>
+          </div>
+        </div>
+
+        <div class="noti_items" id="noti_old">
+          <img
+            class="img_avatar"
+            src="./assets/images/avatar-nathan-peterson.webp"
+            alt="Nathan Peterson"
+          />
+          <div class="noti_items_text">
+            <div class="noti_firstLine">
+              <a class="bold name" href="#">Nathan Peterson</a>
+              <span>&nbsp;reacted to your recent post&nbsp;</span>
+              <a class="bold activity" href="#"
+                >5 end-game strategies to increase your win rate</a
+              >
+            </div>
+            <p class="noti_time">2 weeks ago</p>
+          </div>
+        </div>
+
+        <div class="noti_items" id="noti_old">
+          <img
+            class="img_avatar"
+            src="./assets/images/avatar-anna-kim.webp"
+            alt="Anna Kim"
+          />
+          <div class="noti_items_text">
+            <div class="noti_firstLine">
+              <a class="bold name" href="#">Anna Kim</a>
+              <span>&nbsp;left the group&nbsp;</span>
+              <a class="bold activity" href="#">Chess Club</a>
+            </div>
+            <p class="noti_time">2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
