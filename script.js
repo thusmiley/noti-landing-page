@@ -1,14 +1,12 @@
-
-const markAllRead = document.getElementById("markAllRead");
-const markRead = document.getElementById("noti_new");
+const allRead = document.getElementById("markAllRead");
+const oneRead = document.getElementsByClassName("noti_new");
 
 function markAllRead() {
-  markAllRead.classList.remove("dot");
-  markAllRead.classList.remove("noti_new--bg");
+  allRead.classList.remove("dot");
+  allRead.classList.remove("noti_new--bg");
 }
 
 function markRead() {
-  markRead.classList.remove("dot");
-  markRead.classList.remove("noti_new--bg");
+  oneRead.classList.remove("dot");
+  oneRead.classList.remove("noti_new--bg");
 }
-
